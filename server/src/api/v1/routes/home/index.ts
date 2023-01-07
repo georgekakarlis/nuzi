@@ -1,8 +1,11 @@
 import {Router} from "express";
-import {getHome} from "../../controllers/home.controller";
 
 const router = Router();
 
-router.get("/", getHome);
+router.get("/", (req, res) => {
+  res.sendFile(
+    "/Users/georgekakarlis/Desktop/NUZI/nuzi-server-ts/server/static/index.html"
+  );
+});
 
 export default router;

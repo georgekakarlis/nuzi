@@ -1,5 +1,4 @@
 import {Router, Request, Response} from "express";
-import {getHome} from "../controllers/home.controller";
 import {getUsers} from "../controllers/users.controller";
 import home from "./home";
 import rooms from "./rooms";
